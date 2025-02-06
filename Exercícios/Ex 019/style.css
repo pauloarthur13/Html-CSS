@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* 
+Identificador em HTML: id (só pode um elemento)
+Indentificador em CSS: # (pode vários elementos) 
+HTML: class
+CSS: .
+*/
+
+body{
+    background-color: rgba(119, 222, 235, 0.685);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal{
+    color: white;
+    text-align: center;
+    background-color: rgba(5, 80, 90, 0.979);
+}
+
+h1{
+    color: rgba(5, 80, 90, 0.979);
+}
+
+h2{
+    color: rgba(100, 117, 163, 0.979);
+}
+
+.basico{
+    color: rgb(9, 172, 23);
+    background-color: rgba(5, 80, 90, 0.295);
+}
+
+.intermediario{
+    color: rgb(203, 236, 14);
+    background-color: rgba(5, 80, 90, 0.274);
+}
+
+.avancado{
+    color: rgb(179, 21, 21);
+    background-color: rgba(5, 80, 90, 0.267);
+}

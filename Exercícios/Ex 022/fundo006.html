@@ -7,11 +7,14 @@
     <style>
         body{
             height: 97vh;
-            background-color: black;
-            background-image: url(imagens/imagens-cap19/wallpaper002.jpg);
-            background-repeat: repeat-y;
-            background-position: center center;
-            background-size: cover
+            background: black url(imagens/imagens-cap19/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+            
+
+            /*shorthand para background:
+            color > image(url) > position > repeat > attachment
+            **adicionar o background-size fora da shorthand, mas por padrão já vem com cover
+            */ 
         }
 
         main{

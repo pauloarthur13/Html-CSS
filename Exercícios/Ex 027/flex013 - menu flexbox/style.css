@@ -18,15 +18,44 @@ header{
     background-color: gray;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 header h1{
     border: 1px dotted black;
+    flex: 0 0 200px;
 }
 
 nav{
     margin-top: 5px;
     border: 1px dotted black;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+nav a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+    
+}
+
+nav a:hover{
+    background-color: rgb(236, 235, 235);
+    color: black;
+    transition: 0.4s;
 }
 
 main{
@@ -35,4 +64,18 @@ main{
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.411);
+}
+
+@media screen and (max-width: 565px) {
+    body{
+        width: 97vw;
+    }
+    
+    header{
+        display: block;
+    }
+    
+    nav{
+        flex-flow: column nowrap;
+    }
 }
